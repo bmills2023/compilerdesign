@@ -1,0 +1,28 @@
+program quessNumber;
+  var a,b,num, correct, guess, count: integer;
+  begin
+  
+    write('Enter two four digit  numbers ');
+    read(a,b);
+  num := (a*b/73)%100+1;
+    writeln ('OK I am thinking of a number between 1 and 100');
+    correct := 0;
+    count := 0;
+    while (correct <> 1) do
+    begin
+      count := count + 1;
+      write('Guess: ');
+      read(guess);
+      if (guess > num) then
+        writeln('Too high')
+      else if (guess < num) then
+        writeln('Too low')
+      else
+      begin
+        writeln('You got it ');
+      correct := 1;
+     end;
+   end;
+   write('Number of guesses: '); writeln(count);
+  end.
+        

@@ -1,0 +1,10 @@
+	program junk;
+	var a, b:integer;
+	procedure stuff(x,y:integer);
+	var a,b:integer;
+	begin
+	a:=5;
+	b:=a+7;
+	call stuff(a,b);
+	write('Done');
+	end.

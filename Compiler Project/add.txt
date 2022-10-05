@@ -1,0 +1,16 @@
+program add;
+	var n, sum:integer;
+	begin
+		sum:=0;
+		writeln('Enter numbers End with 999');
+		write('n:');
+		read(n);
+		while n<>999 do
+		begin
+			sum:=sum + n;
+			write('n:');
+			read(n);
+		end;
+		write('The sum is '); 
+		write(sum);
+	end.

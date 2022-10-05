@@ -1,0 +1,21 @@
+program swap1; !swaps using a procedure
+  var a,b: integer;
+  procedure swap(a,b:integer);
+  var temp:integer;
+  begin
+  
+     temp := a;
+     a:= b;
+     b:= temp;
+     write('a is now '); writeln(a);
+     write('b is now '); writeln(b); 
+  end;
+  begin
+    write('Enter a: ');
+    read(a);
+     write('Enter b: ');
+    read(b);
+    call swap(a,b);
+ end.
+
+  

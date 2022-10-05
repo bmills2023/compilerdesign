@@ -1,0 +1,15 @@
+program swap;
+var a,b,temp:integer;
+begin
+write('Enter a: ');
+read(a);
+write('Enter b: ');
+read(b);
+temp := a;
+a:= b;
+b:= temp;
+write('a is now '); writeln(a); 
+write('b is now '); writeln(b); 
+end.
+  
+  

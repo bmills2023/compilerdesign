@@ -1,0 +1,152 @@
+<--PARSE TREE FOR: hanoi.txt-->
+Program -> program id; variable_declarations subprogram_declarations compound_statement.
+variable_declarations -> var variable_declaration ; {variable_declaration;} | ε
+variable_declaration -> identifier_list : type
+identifier_list -> id {,id}
+type -> integer
+subprogram_declarations -> subprogram_declaration ; subprogram_declarations  | ε
+subprogram_declaration -> subprogram_head variable_declarations compound_statement
+subprogram_head -> procedure id arguments ;
+ arguments -> (parameter_list) 
+parameter_list -> identifier_list : type { ; identifier_list : type} 
+identifier_list -> id {,id}
+type -> integer
+variable_declarations -> var variable_declaration ; {variable_declaration;} | ε
+variable_declaration -> identifier_list : type
+identifier_list -> id {,id}
+type -> integer
+compound_statement -> begin statement_list end
+statement_list -> statement  {; statement }
+statement -> assignment_statement | procedure_statement | compound_statement | if_statement | while_statement | read_statement | write_statement | ε
+assignment_statement -> id assignop expression
+expression -> simple_expression [ relop simple_expression]
+simple_expression ->	[-]term {addop term}
+term -> factor {mulop  factor }
+factor -> id | num | true | false | (expression) | not factor
+statement -> assignment_statement | procedure_statement | compound_statement | if_statement | while_statement | read_statement | write_statement | ε
+assignment_statement -> id assignop expression
+expression -> simple_expression [ relop simple_expression]
+simple_expression ->	[-]term {addop term}
+term -> factor {mulop  factor }
+factor -> id | num | true | false | (expression) | not factor
+term -> factor {mulop  factor }
+factor -> id | num | true | false | (expression) | not factor
+statement -> assignment_statement | procedure_statement | compound_statement | if_statement | while_statement | read_statement | write_statement | ε
+if_statement -> if  expression then statement [else statement]
+expression -> simple_expression [ relop simple_expression]
+simple_expression ->	[-]term {addop term}
+term -> factor {mulop  factor }
+factor -> id | num | true | false | (expression) | not factor
+simple_expression ->	[-]term {addop term}
+term -> factor {mulop  factor }
+factor -> id | num | true | false | (expression) | not factor
+statement -> assignment_statement | procedure_statement | compound_statement | if_statement | while_statement | read_statement | write_statement | ε
+compound_statement -> begin statement_list end
+statement_list -> statement  {; statement }
+statement -> assignment_statement | procedure_statement | compound_statement | if_statement | while_statement | read_statement | write_statement | ε
+procedure_statement ->	call id (expression_list)
+expression_list -> expression { , expression }
+expression -> simple_expression [ relop simple_expression]
+simple_expression ->	[-]term {addop term}
+term -> factor {mulop  factor }
+factor -> id | num | true | false | (expression) | not factor
+expression -> simple_expression [ relop simple_expression]
+simple_expression ->	[-]term {addop term}
+term -> factor {mulop  factor }
+factor -> id | num | true | false | (expression) | not factor
+expression -> simple_expression [ relop simple_expression]
+simple_expression ->	[-]term {addop term}
+term -> factor {mulop  factor }
+factor -> id | num | true | false | (expression) | not factor
+expression -> simple_expression [ relop simple_expression]
+simple_expression ->	[-]term {addop term}
+term -> factor {mulop  factor }
+factor -> id | num | true | false | (expression) | not factor
+statement -> assignment_statement | procedure_statement | compound_statement | if_statement | while_statement | read_statement | write_statement | ε
+write_statement -> write(output_item)
+output_item -> string | expression
+expression -> simple_expression [ relop simple_expression]
+simple_expression ->	[-]term {addop term}
+term -> factor {mulop  factor }
+factor -> id | num | true | false | (expression) | not factor
+statement -> assignment_statement | procedure_statement | compound_statement | if_statement | while_statement | read_statement | write_statement | ε
+write_statement -> write(output_item)
+output_item -> string | expression
+statement -> assignment_statement | procedure_statement | compound_statement | if_statement | while_statement | read_statement | write_statement | ε
+write_statement -> write(output_item)
+output_item -> string | expression
+expression -> simple_expression [ relop simple_expression]
+simple_expression ->	[-]term {addop term}
+term -> factor {mulop  factor }
+factor -> id | num | true | false | (expression) | not factor
+statement -> assignment_statement | procedure_statement | compound_statement | if_statement | while_statement | read_statement | write_statement | ε
+writeln_statement -> writeln(output_item)
+output_item -> string | expression
+statement -> assignment_statement | procedure_statement | compound_statement | if_statement | while_statement | read_statement | write_statement | ε
+procedure_statement ->	call id (expression_list)
+expression_list -> expression { , expression }
+expression -> simple_expression [ relop simple_expression]
+simple_expression ->	[-]term {addop term}
+term -> factor {mulop  factor }
+factor -> id | num | true | false | (expression) | not factor
+expression -> simple_expression [ relop simple_expression]
+simple_expression ->	[-]term {addop term}
+term -> factor {mulop  factor }
+factor -> id | num | true | false | (expression) | not factor
+expression -> simple_expression [ relop simple_expression]
+simple_expression ->	[-]term {addop term}
+term -> factor {mulop  factor }
+factor -> id | num | true | false | (expression) | not factor
+expression -> simple_expression [ relop simple_expression]
+simple_expression ->	[-]term {addop term}
+term -> factor {mulop  factor }
+factor -> id | num | true | false | (expression) | not factor
+statement -> assignment_statement | procedure_statement | compound_statement | if_statement | while_statement | read_statement | write_statement | ε
+subprogram_declarations -> subprogram_declaration ; subprogram_declarations  | ε
+compound_statement -> begin statement_list end
+statement_list -> statement  {; statement }
+statement -> assignment_statement | procedure_statement | compound_statement | if_statement | while_statement | read_statement | write_statement | ε
+write_statement -> write(output_item)
+output_item -> string | expression
+statement -> assignment_statement | procedure_statement | compound_statement | if_statement | while_statement | read_statement | write_statement | ε
+read_statement -> read ( input_list)
+input_list -> id {,id}
+statement -> assignment_statement | procedure_statement | compound_statement | if_statement | while_statement | read_statement | write_statement | ε
+write_statement -> write(output_item)
+output_item -> string | expression
+statement -> assignment_statement | procedure_statement | compound_statement | if_statement | while_statement | read_statement | write_statement | ε
+read_statement -> read ( input_list)
+input_list -> id {,id}
+statement -> assignment_statement | procedure_statement | compound_statement | if_statement | while_statement | read_statement | write_statement | ε
+write_statement -> write(output_item)
+output_item -> string | expression
+statement -> assignment_statement | procedure_statement | compound_statement | if_statement | while_statement | read_statement | write_statement | ε
+read_statement -> read ( input_list)
+input_list -> id {,id}
+statement -> assignment_statement | procedure_statement | compound_statement | if_statement | while_statement | read_statement | write_statement | ε
+write_statement -> write(output_item)
+output_item -> string | expression
+statement -> assignment_statement | procedure_statement | compound_statement | if_statement | while_statement | read_statement | write_statement | ε
+read_statement -> read ( input_list)
+input_list -> id {,id}
+statement -> assignment_statement | procedure_statement | compound_statement | if_statement | while_statement | read_statement | write_statement | ε
+procedure_statement ->	call id (expression_list)
+expression_list -> expression { , expression }
+expression -> simple_expression [ relop simple_expression]
+simple_expression ->	[-]term {addop term}
+term -> factor {mulop  factor }
+factor -> id | num | true | false | (expression) | not factor
+expression -> simple_expression [ relop simple_expression]
+simple_expression ->	[-]term {addop term}
+term -> factor {mulop  factor }
+factor -> id | num | true | false | (expression) | not factor
+expression -> simple_expression [ relop simple_expression]
+simple_expression ->	[-]term {addop term}
+term -> factor {mulop  factor }
+factor -> id | num | true | false | (expression) | not factor
+expression -> simple_expression [ relop simple_expression]
+simple_expression ->	[-]term {addop term}
+term -> factor {mulop  factor }
+factor -> id | num | true | false | (expression) | not factor
+statement -> assignment_statement | procedure_statement | compound_statement | if_statement | while_statement | read_statement | write_statement | ε
+SUCCESS!

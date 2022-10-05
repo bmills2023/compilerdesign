@@ -1,0 +1,25 @@
+program fibN; ! calculates the nth Fibonacci number
+  var n:integer;
+  procedure  fibonaccii(n: integer);
+  var fib,previous, i, temp : integer;
+  begin
+     fib := 1;
+     previous := 1;
+     i := 2;
+     while i < n do
+     begin
+        temp := fib;
+        fib := fib + previous;
+        previous := temp;
+        i := i + 1;
+      end;
+      write(' Fibonacci('); 
+       write(n); 
+       write(') is ');
+       writeln(fib);
+  end;
+begin
+  write('Enter n: ');
+  read(n);
+  call fibonaccii( n);
+end.

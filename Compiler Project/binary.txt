@@ -1,0 +1,18 @@
+program Binary; ! Recursive , give binary value of decimal
+  var x: integer;
+  procedure convert( x: integer);
+  var a: integer;
+  begin
+    if x <> 0 then
+    begin
+      a := x%2;
+      x := x/2;
+      call convert(x);
+      write(a);
+    end;
+  end;
+ begin 
+    write('Enter a decimal number ');
+    read(x);
+    call convert(x);
+  end.

@@ -1,0 +1,13 @@
+program basics1;
+  var a,b,c, d,e:integer;
+  begin
+  a:= 5;
+  b:= 6;
+  c:= 7;
+  d:=8;
+  e:= 9;
+  writeln(a+b+c);
+  writeln(d%a);
+  writeln(a*b + c*d);
+  writeln(e+2*c-3);
+end.

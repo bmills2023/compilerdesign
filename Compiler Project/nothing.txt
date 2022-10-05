@@ -1,0 +1,20 @@
+program nothing;
+  var x, y :integer;
+  procedure W(x,y:integer);
+  var a,b,c: integer;
+  begin
+  if x = 1 then
+  c := x + y
+  else
+  begin
+  a := 5; 
+  b := 6;
+  c :=  a*b+x*y;
+  end;
+  write(c);
+ end;
+ begin
+  write('Enter two integers ');
+  read(x);  read (y);
+  call W(x,y);
+ end.

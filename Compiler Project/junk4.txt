@@ -1,0 +1,20 @@
+program junk4;
+
+var a,b,c:integer;
+
+procedure dumb(x,y,z:integer);
+begin
+writeln('Your numbers sir...');
+writeln(x+y+z);
+end;
+
+begin
+writeln('Enter a:');
+read(a);
+writeln('Enter b:');
+read(b);
+writeln('Enter c:');
+read(c);
+call dumb(a,b,c);
+writeln('all done');
+end.

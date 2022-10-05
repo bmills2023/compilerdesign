@@ -1,0 +1,22 @@
+program average;
+procedure getAverage(x: integer); 
+var sum, grade, count, ave:integer; 
+begin
+sum := 0;
+count := 0;
+write('Enter grades End with 999\n'); 
+read(grade);
+while grade <> 999 do
+begin
+count := count + 1; 
+sum := sum + grade; 
+write('grade: '); 
+read(grade);
+end;
+ave := sum/count;
+write ('The average is '); 
+write(ave);
+end;
+begin
+call getAverage(0); 
+end.

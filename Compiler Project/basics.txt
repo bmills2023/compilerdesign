@@ -1,0 +1,9 @@
+program basics;
+!just does  simple arithmetic
+!generates correct quads
+begin
+  writeln(2+3+4);
+  writeln(5%2);
+  writeln(2*3 + 4*5);
+  writeln(9+2*7-3);
+end.

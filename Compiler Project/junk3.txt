@@ -1,0 +1,20 @@
+program junk3;
+var a,b:integer;
+procedure dumb(x,y:integer);
+var a:integer;
+begin
+if x<y then
+a:=0;
+else
+a:=x+y;
+writeln(a);
+end;
+
+begin
+writeln('Enter a:');
+read(a);
+writeln('Enter b:');
+read(b);
+call dumb(a,b);
+writeln('all done');
+end.

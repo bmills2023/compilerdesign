@@ -1,0 +1,9 @@
+program  junk2;
+  var a:integer;
+  begin 
+  a:= 123;
+  if  a> 10 then
+	  write('Big')
+  else
+	  write('Little')
+  end.
